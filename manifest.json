@@ -1,0 +1,22 @@
+{
+    "nome": "Agenda por mês",
+    "short_name": "Agenda",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#3c4075",
+    "icons": [
+        {
+            "src":"icons/appstore.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+
+        {
+            "src":"icons/playstore.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+
+    ]
+}

@@ -1,0 +1,63 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(24, 24, 24);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    max-width: 500px;
+    margin: 20px auto;
+    color: #fff;
+}
+
+.cabeçalho {
+    font-weight: bold;
+
+}
+
+.dias {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.dias:hover{
+    background-color: #0a1170; /* #33376e */
+;
+}
+
+.agenda {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+textarea {
+    width: 50%;
+    height: 80px;
+    margin-top: 10px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+button {
+    width: 70px;
+    height: 50px;
+    border: none;
+    border-radius: 35%;
+    padding: 10px 10px;
+    margin: 5px;
+    background-color: #0a1170; /* #c26565 */
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 200;
+}
+
