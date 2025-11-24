@@ -1,25 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Calendário - Agenda</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="manifest" href="manifest.json">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Loja API</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
+
 <body>
-  <h1 id="mes"></h1>
-  <div class="calendar" id="calendario"></div>
+    <h1>Estelita Margarita</h1>
 
-  <div class="agenda">
-    <h2 id="selecione">Selecione um dia</h2>
-    <textarea id="nota"></textarea><br>
-    <button onclick="salveNota()">Salvar</button>
-  </div>
+    <div id="formularioContainer">
+        <h2>Cadastrar Novo Produto</h2>
+        <form id="produtoForm">
+            <label for="title">Título:</label>
+            <input type="text" id="title" required><br><br>
 
+            <label for="price">Preço:</label>
+            <input type="number" id="price" step="0.01" required><br><br>
 
- 
-     <script src="script.js"></script>
+            <label for="description">Descrição:</label>
+            <textarea id="description" required></textarea><br><br>
 
+            <label for="image">URL da Imagem:</label>
+            <input type="url" id="image" required><br><br>
+
+            <label for="category">Categoria:</label>
+            <input type="text" id="category" required><br><br>
+
+            <input type="hidden" id="produtoId">
+
+            <button type="submit" id="submitButton">Cadastrar Produto</button>
+        </form>
+        <p id="mensagemStatus"></p>
+    </div>
+
+    <hr>
+
+    <h2>Lista de Produtos</h2>
+    <div class="produtos" id="listaProdutos">
+        </div>
 
 </body>
+
 </html>
